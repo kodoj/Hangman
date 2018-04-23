@@ -13,7 +13,7 @@ def main():
 
 
 def greeting():
-    print("\n", "Welcome to the HangMan game!", "\n")
+    print("\n", "Welcome to the HangMan game!", "\n", sep='')
 
 
 def file_load():
