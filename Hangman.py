@@ -159,7 +159,7 @@ def highscore_output():
             print(i+1, ". ", score_board[i][0], "  ", score_board[i][1])
     file1 = open("/home/kodoj/codecool/highscore.txt", "w")
     for j in range(0, len(score_board)):
-        record = (str(score_board[j][0]) + " | " + str(score_board[j][1]) + "\n")
+        record = (str(score_board[j][0]) + " | " + str(score_board[j][1]) + "\n", sep='')
         file1.write(record)
 
 
