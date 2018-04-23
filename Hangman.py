@@ -13,7 +13,7 @@ def main():
 
 
 def greeting():
-    print("\n", "Welcome to the HangMan game!", "\n", sep='')
+    print("\n", "Welcome to the HangMan game!", "\n")
 
 
 def file_load():
@@ -156,7 +156,7 @@ def highscore_output():
             print(score_board[i])
     else:
         for i in range(0, len(score_board)):
-            print(i+1, ". ", score_board[i][0], "  ", score_board[i][1], sep='')
+            print(i+1, ". ", score_board[i][0], "  ", score_board[i][1])
     file1 = open("/home/kodoj/codecool/highscore.txt", "w")
     for j in range(0, len(score_board)):
         record = (str(score_board[j][0]) + " | " + str(score_board[j][1]) + "\n")
